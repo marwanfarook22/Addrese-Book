@@ -10,21 +10,20 @@ using System.Text.RegularExpressions;
 public class ValiditorClass : ValidatorBase, IValidationClass
 {
 
-    public List<Contact> CreateValidatedContact()
+    public Contact CreateValidatedContact()
     {
         List<Contact> contacts = new List<Contact>();
         string contactName = ValidateName();
         string ContectEmail = ValidateEmail();
         List<string>? PhonesColliction = PhonesCollictionValidtion();
 
-        contacts.Add(new Contact
+
+        return new Contact
         {
             Name = contactName,
             Email = ContectEmail,
             PhoneNumber = PhonesColliction
-        });
-
-        return contacts;
+        };
 
     }
 

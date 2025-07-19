@@ -2,7 +2,7 @@
 {
     List<string> PhonesCollictionValidtion();
     string ValidateSinglePhoneNumber();
-    List<Contact> CreateValidatedContact();
+    Contact CreateValidatedContact();
     string ValidateEmail();
     string ValidateName();
 }

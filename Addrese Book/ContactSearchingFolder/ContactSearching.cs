@@ -1,6 +1,6 @@
 ﻿namespace Addrese_Book.ContactSearchingFolder;
 
-public class ContactSearching : IContactSearching
+public partial class ContactSearching : IContactSearching
 {
     public IContactSearchUI _contactSearchUI;
 
@@ -54,12 +54,5 @@ public class ContactSearching : IContactSearching
         {
             _contactSearchUI.DisplaySearchResults(SearchedList);
         }
-    }
-
-    public enum ContactDetail
-    {
-        userName,
-        email,
-        phoneNumber,
     }
 }

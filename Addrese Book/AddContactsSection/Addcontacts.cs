@@ -7,7 +7,7 @@
 
 using System.Text.RegularExpressions;
 
-public class ValiditorClass : ValidatorBase, IValidationClass
+public class Addcontacts : ValidatorBase, IAddContactClass
 {
 
     public Contact CreateValidatedContact()

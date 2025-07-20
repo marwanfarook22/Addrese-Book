@@ -1,4 +1,4 @@
-﻿public interface IValidationClass
+﻿public interface IAddContactClass
 {
     List<string> PhonesCollictionValidtion();
     string ValidateSinglePhoneNumber();

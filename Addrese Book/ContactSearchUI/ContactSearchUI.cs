@@ -2,15 +2,15 @@
 
 public class ContactSearchUI : IContactSearchUI
 {
-    public ContactDetail UserInteractive(string message)
+    public ContactDetail UserInteractive(string messages)
     {
-        Console.WriteLine(message);
+        Console.WriteLine(messages);
         UserInterface();
         string userInput = Console.ReadLine()!.Trim();
         switch (userInput)
         {
             case "1":
-                Console.WriteLine("You have selected to search by Name.");
+                Console.WriteLine($"You have selected to search by Name.");
                 return ContactDetail.userName;
             case "2":
                 Console.WriteLine("You have selected to search by Email.");

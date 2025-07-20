@@ -1,8 +1,11 @@
 ﻿
 
 using Addrese_Book.ContactSearchingFolder;
+using System;
+using System.ComponentModel.DataAnnotations;
+using System.Xml.Linq;
 
-var Validator = new ValiditorClass();
+var addContact = new Addcontacts();
 List<Contact> Contacts = new List<Contact>()
 {
     new Contact
@@ -32,15 +35,17 @@ List<Contact> Contacts = new List<Contact>()
 };
 
 
+
+
+
 new ContactSearching(new ContactSearchUI()).FilteringList(Contacts);
+Console.WriteLine();
+var editContact = new ContactEditor(new Addcontacts(), Contacts, new EditContactsUI());
+editContact.EditedRunSection();
 
 
 
+Console.WriteLine("press Any Key To Esc");
 Console.ReadKey();
-
-
-
-
-
 
 

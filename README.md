@@ -1,15 +1,16 @@
-# 📘 Address Book Console App
+ # 📘 Address Book Console App
 
 This is a console-based Address Book built in C#. It allows you to add, edit, delete, and search contacts with local JSON file storage for persistence.
 
 ## 🧭 Navigation
 
-- [Features](#-features)
-- [Technologies](#️-technologies)
-- [Structure](#-structure)
-- [Getting Started](#-getting-started)
-- [Screenshots](#-screenshots)
-- [License](#-license)
+- Features
+- Technologies
+- Structure
+- Getting Started
+- Screenshots
+- Flowchart Algorithms
+- License
 
 ## 💡 Features
 - Add new contacts with name, number, and email
@@ -47,10 +48,13 @@ This is a console-based Address Book built in C#. It allows you to add, edit, de
 4. Run the app and interact through the console.
 
 ## 📸 Screenshots
- <img width="900" height="900" alt="Desktop Screenshot 2025 07 22 - 18 19 26 38" src="https://github.com/user-attachments/assets/0f2d07da-ce3f-40f5-8f8c-668edb7996ab" />
-<img width="1920" height="1080" alt="Desktop Screenshot 2025 07 22 - 18 08 40 33" src="https://github.com/user-attachments/assets/8083da26-0fdb-4e46-bb3f-923236461f5b" />
+<img width="600" height="600" alt="Desktop Screenshot 2025 07 22 - 18 19 26 38" src="https://github.com/user-attachments/assets/f6467163-d63c-4f7d-9457-d4fd9ffa4b37" /> <img width="600" height="600" alt="Desktop Screenshot 2025 07 22 - 18 08 40 33" src="https://github.com/user-attachments/assets/17d53603-1106-4e65-82db-ee5d7de2ce0e" />
 
+## 🔄 Flowchart Algorithms
+![Addressee Book (1)](https://github.com/user-attachments/assets/9c85831a-2f3c-4e9b-9c5a-73ccf0e15a07)
+![Addressee Book (2)](https://github.com/user-attachments/assets/2cac6bbc-a45c-4504-9f19-5d709fca7302)
 
+For a detailed view of the flowchart algorithms for this project, refer to [Flowchart Project](https://miro.com/app/live-embed/uXjVJcCU3ao=/?embedMode=view_only_without_ui&moveToViewport=1574%2C134%2C3786%2C1954&embedId=659935649572)⬅️
 ## 📄 License
-
 MIT License
+

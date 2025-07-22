@@ -1,8 +1,8 @@
 ﻿public struct Contact
 {
-    public string Name;
-    public string Email;
-    public List<string> PhoneNumber;
+    public string Name { get; set; }
+    public string Email { get; set; }
+    public List<string> PhoneNumber { get; set; }
 }
 
 

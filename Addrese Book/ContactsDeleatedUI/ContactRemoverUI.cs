@@ -10,6 +10,10 @@
         }
     }
 
+    public void displayMessage(string message)
+    {
+        Console.WriteLine(message);
+    }
 
     public int Userintractive(string message, int ContactsLength)
     {

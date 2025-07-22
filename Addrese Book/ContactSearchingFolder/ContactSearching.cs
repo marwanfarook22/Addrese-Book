@@ -25,12 +25,20 @@ public partial class ContactSearching : IContactSearching
             [ContactDetail.phoneNumber] = input => contacts.Where(x => x.PhoneNumber?.Any(p => p.Contains(input)) ?? false).ToList(),
         };
 
-        ContactDetail UserInput = _contactSearchUI.UserInteractive("Please select the type of contact you want to search for:");
-        while (!Filters.ContainsKey(UserInput))
+        if (contacts.Count == 0)
         {
-            UserInput = _contactSearchUI.UserInteractive("Invalid Key Try Again");
+            _contactSearchUI.DisplayError("No Data Found ");
         }
-        SearchContacts(UserInput, Filters);
+        else
+        {
+
+            ContactDetail UserInput = _contactSearchUI.UserInteractive("Please select the type of contact you want to search for:");
+            while (!Filters.ContainsKey(UserInput))
+            {
+                UserInput = _contactSearchUI.UserInteractive("Invalid Key Try Again");
+            }
+            SearchContacts(UserInput, Filters);
+        }
     }
 
 

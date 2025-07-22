@@ -17,11 +17,19 @@
     public void EditedRunSection()
     {
         _ui.ShowMessage("Please enter the value you want to Edit for:");
-        _ui.DataDisplay(_contacts);
-        var index = _ui.GetContactIndex("Enter Your Chossen data number ", _contacts);
-        string fieldToEdit = _ui.UserInteractiveChossenDetail();
-        _contacts[index] = EditContactField(index, fieldToEdit);
-        _ui.DataDisplay(_contacts);
+        if (_contacts.Count == 0)
+        {
+            _ui.ShowMessage("no data Found ");
+        }
+        else
+        {
+
+            _ui.DataDisplay(_contacts);
+            var index = _ui.GetContactIndex("Enter Your Chossen data number ", _contacts);
+            string fieldToEdit = _ui.UserInteractiveChossenDetail();
+            _contacts[index] = EditContactField(index, fieldToEdit);
+            _ui.DataDisplay(_contacts);
+        }
     }
 
     private Contact EditContactField(int index, string fieldToEdit)
